@@ -47,6 +47,8 @@ Create each file in this repo and copy over the code. If this seems tedious, try
 
 ### Run Setup Script
 
+**NOTE**: This will only work on a new/empty spreadsheet. Don't run it on an existing spreadsheet - it may overwrite data.
+
 In the script editor, open `setup.gs` and run the `initialSetup` function.
 
 Check that you now have sheets named "Up Transactions", "Credentials" and "Logs".
