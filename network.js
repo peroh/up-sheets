@@ -13,7 +13,7 @@ const buildOptions = () => ({
   }
 })
 
-const createMessage = row => ({
-  message: "Row created",
+const createMessage = (message, row) => ({
+  message,
   data: row
 })

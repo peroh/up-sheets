@@ -1,11 +1,13 @@
 const TRANSACTIONS_SHEET_NAME = 'Up Transactions'
 const CREDENTIALS_SHEET_NAME = 'Credentials'
+const LOGS_SHEET_NAME = 'Logs'
 
 const initialSetup = () => {
   setSheetName(TRANSACTIONS_SHEET_NAME)
   addHeaderRow()
   addSheet(CREDENTIALS_SHEET_NAME)
   addCredentialsFields()
+  addSheet(LOGS_SHEET_NAME)
 }
 
 const addSheet = name => {
