@@ -6,7 +6,7 @@ const initialSetup = () => {
   setSheetName(TRANSACTIONS_SHEET_NAME)
   addHeaderRow()
   addSheet(CREDENTIALS_SHEET_NAME)
-  addCredentialsFields()
+  addCredentialsField()
   addSheet(LOGS_SHEET_NAME)
 }
 
@@ -27,8 +27,7 @@ const addHeaderRow = () => {
 
 const buildHeaderRow = () => ["Date", "Amount", "Description", "Status"]
 
-const addCredentialsFields = () => {
+const addCredentialsField = () => {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(CREDENTIALS_SHEET_NAME)
   sheet.getRange("A1").setValue("API Key")
-  sheet.getRange("A2").setValue("Secret Key")
 }
